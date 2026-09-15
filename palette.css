@@ -1,0 +1,26 @@
+/* Palette File: Contains color palettes for light and dark modes.
+	 for now, we will only be testing with the light mode, and will
+	 implement the dark mode later on.
+*/
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme */
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--bg-base: url("./images/fossils_bg_dark.png");
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg-base: url("./images/fossils_bg_light.png");
+	}
+} */
+
+:root {
+	--bg-base-col: #9C6F57;
+	--bg-base: url("./images/fossils_bg_light.png");
+	--bg-shadow: #3b2f16c1;
+	--section-bg-color: rgb(239, 227, 183);
+	--section-bg-highlight: rgb(255, 245, 215);
+}

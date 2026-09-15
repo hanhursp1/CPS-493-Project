@@ -1,0 +1,37 @@
+/* https://www.w3schools.com/css/css3_fonts.asp */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face */
+
+/* Comic Neue */
+@font-face {
+	font-family: 'Comic Neue';
+	src: 
+		local('Comic Neue'),
+		url(./font/Comic_Neue/ComicNeue-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src: 
+		local('Comic Neue'),
+		url(./font/Comic_Neue/ComicNeue-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src: 
+		local('Comic Neue'),
+		url(./font/Comic_Neue/ComicNeue-Italic.ttf);
+	font-style: italic;
+}
+
+
+/* Hey Gorgeous */
+@font-face {
+	font-family: 'Hey Gorgeous';
+	src: 
+		local('Hey Gorgeous'),
+		url('./font/heygorgeous.ttf');
+	/* It's a very big font for some reason */
+	size-adjust: 70%;
+}
