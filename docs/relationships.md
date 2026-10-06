@@ -35,7 +35,9 @@ All of this is a WIP and is subject to change
 ## "Business" Rules
 
 **User**s may *Adopt* any number of **Pet**s, each **Pet** must be *Owned* by at most one **User**
+
 **Pet**s may *Earn* any number of **Award**s, each **Award** must be *Earned* by at most one **Pet**
+
 **Pet**s may *Befriend* any number of other **Pet**s, **Pets** may be *Befriended* by any number of other **Pet**s
 
 ## Diagrams
