@@ -1,0 +1,107 @@
+<svg width="598pt" height="236pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.00 0.00 597.50 236.00">
+<g id="graph0" class="graph" transform="translate(4,232) scale(1)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-232 593.5,-232 593.5,4 -4,4"/>
+<!-- USER -->
+<g id="node1" class="node">
+<title>USER</title>
+<polyline fill="none" stroke="black" points="152.5,-26 234.5,-26"/>
+<text text-anchor="start" x="155.5" y="-32.4" font-family="Times,serif" font-size="14.00">USER</text>
+<polygon fill="none" stroke="black" points="152.5,-4 152.5,-26 172.5,-26 172.5,-4 152.5,-4"/>
+<text text-anchor="start" x="155.11" y="-11.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">ID</text>
+<polygon fill="none" stroke="black" points="172.5,-4 172.5,-26 234.5,-26 234.5,-4 172.5,-4"/>
+<text text-anchor="start" x="175.12" y="-10.4" font-family="Times,serif" font-size="14.00">Username</text>
+<polygon fill="none" stroke="black" points="234.5,-4 234.5,-26 274.5,-26 274.5,-4 234.5,-4"/>
+<text text-anchor="start" x="237" y="-10.4" font-family="Times,serif" font-size="14.00">EMail</text>
+<polygon fill="none" stroke="black" points="274.5,-4 274.5,-26 362.5,-26 362.5,-4 274.5,-4"/>
+<text text-anchor="start" x="277.28" y="-10.4" font-family="Times,serif" font-size="14.00">PasswordHash</text>
+<polygon fill="none" stroke="black" points="362.5,-4 362.5,-26 443.5,-26 443.5,-4 362.5,-4"/>
+<text text-anchor="start" x="365.28" y="-10.4" font-family="Times,serif" font-size="14.00">PasswordSalt</text>
+</g>
+<!-- PET -->
+<g id="node2" class="node">
+<title>PET</title>
+<polyline fill="none" stroke="black" points="103.5,-114 181.5,-114"/>
+<text text-anchor="start" x="106.5" y="-120.4" font-family="Times,serif" font-size="14.00">PET</text>
+<polygon fill="none" stroke="black" points="103.5,-92 103.5,-114 123.5,-114 123.5,-92 103.5,-92"/>
+<text text-anchor="start" x="106.11" y="-99.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">ID</text>
+<polygon fill="none" stroke="black" points="123.5,-92 123.5,-114 181.5,-114 181.5,-92 123.5,-92"/>
+<text text-anchor="start" x="126.07" y="-99.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">OwnerID</text>
+<polygon fill="none" stroke="black" points="181.5,-92 181.5,-114 220.5,-114 220.5,-92 181.5,-92"/>
+<text text-anchor="start" x="184.29" y="-98.4" font-family="Times,serif" font-size="14.00">Name</text>
+</g>
+<!-- USER&#45;&gt;PET -->
+<g id="edge1" class="edge">
+<title>PET:s-&gt;USER:w</title>
+<path fill="none" stroke="black" d="M152.5,-91C152.5,-62.23 127.28,-27.35 140.65,-17.63"/>
+<polygon fill="black" stroke="black" points="141.13,-21.11 150.03,-15.36 139.49,-14.31 141.13,-21.11"/>
+</g>
+<!-- P -->
+<g id="node3" class="node">
+<title>PETAPPEARANCE</title>
+<polyline fill="none" stroke="black" points="270.5,-202 438.5,-202"/>
+<text text-anchor="start" x="273.5" y="-208.4" font-family="Times,serif" font-size="14.00">PET_APPEARANCE</text>
+<polygon fill="none" stroke="black" points="270.5,-180 270.5,-202 308.5,-202 308.5,-180 270.5,-180"/>
+<text text-anchor="start" x="273.17" y="-187.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">PetID</text>
+<polygon fill="none" stroke="black" points="308.5,-180 308.5,-202 371.5,-202 371.5,-180 308.5,-180"/>
+<text text-anchor="start" x="311.23" y="-187.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">SpeciesID</text>
+<polygon fill="none" stroke="black" points="371.5,-180 371.5,-202 438.5,-202 438.5,-180 371.5,-180"/>
+<text text-anchor="start" x="374.28" y="-186.4" font-family="Times,serif" font-size="14.00">MainColor</text>
+<polygon fill="none" stroke="black" points="438.5,-180 438.5,-202 534.5,-202 534.5,-180 438.5,-180"/>
+<text text-anchor="start" x="441.01" y="-186.4" font-family="Times,serif" font-size="14.00">SecondaryColor</text>
+<polygon fill="none" stroke="black" points="534.5,-180 534.5,-202 581.5,-202 581.5,-180 534.5,-180"/>
+<text text-anchor="start" x="537.01" y="-186.4" font-family="Times,serif" font-size="14.00">Variant</text>
+</g>
+<!-- P -->
+<g id="edge2" class="edge">
+<title>PETAPPEARANCE:PETID-&gt;PET:w</title>
+<path fill="none" stroke="black" d="M269.5,-191C259.59,-191 261.76,-180.64 253,-176 192.6,-144.01 146.51,-193.11 103.5,-140 96.54,-131.41 91.06,-117.66 93.2,-109.56"/>
+<polygon fill="black" stroke="black" points="95.11,-112.5 101.26,-103.87 91.07,-106.78 95.11,-112.5"/>
+</g>
+<!-- S -->
+<g id="node4" class="node">
+<title>SPECIES</title>
+<polyline fill="none" stroke="black" points="330.5,-114 390.5,-114"/>
+<text text-anchor="start" x="333.27" y="-120.4" font-family="Times,serif" font-size="14.00">SPECIES</text>
+<polygon fill="none" stroke="black" points="330.5,-92 330.5,-114 350.5,-114 350.5,-92 330.5,-92"/>
+<text text-anchor="start" x="333.11" y="-99.4" font-family="Times,serif" text-decoration="underline" font-size="14.00">ID</text>
+<polygon fill="none" stroke="black" points="350.5,-92 350.5,-114 390.5,-114 390.5,-92 350.5,-92"/>
+<text text-anchor="start" x="353.79" y="-98.4" font-family="Times,serif" font-size="14.00">Name</text>
+<polygon fill="none" stroke="black" points="390.5,-92 390.5,-114 472.5,-114 472.5,-92 390.5,-92"/>
+<text text-anchor="start" x="393.02" y="-98.4" font-family="Times,serif" font-size="14.00">InternalName</text>
+<polygon fill="none" stroke="black" points="472.5,-92 472.5,-114 511.5,-114 511.5,-92 472.5,-92"/>
+<text text-anchor="start" x="475.28" y="-98.4" font-family="Times,serif" font-size="14.00">Sprite</text>
+</g>
+<!-- PETAPPEARANCE&#45;&gt;S -->
+<g id="edge3" class="edge">
+<title>PETAPPEARANCE:SPECIESID-&gt;SPECIES:ID</title>
+<path fill="none" stroke="black" d="M340,-179C340,-150.5 308.83,-116.54 318.53,-106.16"/>
+<polygon fill="black" stroke="black" points="319.41,-109.55 328.05,-103.42 317.47,-102.83 319.41,-109.55"/>
+</g>
+<!-- P -->
+<g id="node5" class="node">
+<title>PETSTATS</title>
+<polyline fill="none" stroke="black" points="8,-202 89,-202"/>
+<text text-anchor="start" x="11" y="-208.4" font-family="Times,serif" font-size="14.00">PET_STATS</text>
+<polygon fill="none" stroke="black" points="8,-180 8,-202 46,-202 46,-180 8,-180"/>
+<text text-anchor="start" x="10.67" y="-187.4" font-family="Times,serif" font-size="14.00" text-decoration="underline">PetID</text>
+<polygon fill="none" stroke="black" points="46,-180 46,-202 89,-202 89,-180 46,-180"/>
+<text text-anchor="start" x="48.84" y="-186.4" font-family="Times,serif" font-size="14.00">Health</text>
+<polygon fill="none" stroke="black" points="89,-180 89,-202 136,-202 136,-180 89,-180"/>
+<text text-anchor="start" x="91.51" y="-186.4" font-family="Times,serif" font-size="14.00">Hunger</text>
+<polygon fill="none" stroke="black" points="136,-180 136,-202 158,-202 158,-180 136,-180"/>
+<text text-anchor="start" x="138.83" y="-186.4" font-family="Times,serif" font-size="14.00">Str</text>
+<polygon fill="none" stroke="black" points="158,-180 158,-202 187,-202 187,-180 158,-180"/>
+<text text-anchor="start" x="160.84" y="-186.4" font-family="Times,serif" font-size="14.00">Dex</text>
+<polygon fill="none" stroke="black" points="187,-180 187,-202 215,-202 215,-180 187,-180"/>
+<text text-anchor="start" x="189.72" y="-186.4" font-family="Times,serif" font-size="14.00">Cha</text>
+<polygon fill="none" stroke="black" points="215,-180 215,-202 236,-202 236,-180 215,-180"/>
+<text text-anchor="start" x="217.72" y="-186.4" font-family="Times,serif" font-size="14.00">Int</text>
+</g>
+<!-- S -->
+<g id="edge4" class="edge">
+<title>PETSTATS:PETID-&gt;PET:w</title>
+<path fill="none" stroke="black" d="M27,-179C27,-135.29 50.5,-107.79 91.19,-103.57"/>
+<polygon fill="black" stroke="black" points="91.18,-107.07 100.99,-103.08 90.83,-100.08 91.18,-107.07"/>
+</g>
+</g>
+</svg>

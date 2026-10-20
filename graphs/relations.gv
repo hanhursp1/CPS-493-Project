@@ -1,0 +1,71 @@
+digraph {
+    NODE [shape=none]
+    USER [label=<
+<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="left" sides="b" colspan="2">USER</td></tr>
+    <tr>
+        <td port="ID"><u>ID</u></td>
+        <td port="USERNAME">Username</td>
+        <td port="EMAIL">EMail</td>
+        <td port="PASSWORDHASH">PasswordHash</td>
+        <td port="PASSWORDSALT">PasswordSalt</td>
+    </tr>
+</table>
+    >]
+
+    PET [label=<
+<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="left" sides="b" colspan="2">PET</td></tr>
+    <tr>
+        <td port="ID"><u>ID</u></td>
+        <td port="OWNERID"><u>OwnerID</u></td>
+        <td port="NAME">Name</td>
+    </tr>
+</table>
+    >]
+
+     PETAPPEARANCE [label=<
+<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="left" sides="b" colspan="3">PET_APPEARANCE</td></tr>
+    <tr>
+        <td port="PETID"><u>PetID</u></td>
+        <td port="SPECIESID"><u>SpeciesID</u></td>
+        <td port="MAINCOLOR">MainColor</td>
+        <td port="SECONDARYCOLOR">SecondaryColor</td>
+        <td port="VARIANT">Variant</td>
+    </tr>
+</table>
+    >]
+
+    SPECIES [label=<
+<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="left" sides="b" colspan="2">SPECIES</td></tr>
+    <tr>
+        <td port="ID"><u>ID</u></td>
+        <td port="NAME">Name</td>
+        <td port="INTERNALNAME">InternalName</td>
+        <td port="SPRITE">Sprite</td>
+    </tr>
+</table>
+    >]
+
+    PETSTATS [label=<
+<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="left" sides="b" colspan="2">PET_STATS</td></tr>
+    <tr>
+        <td port="PETID"><u>PetID</u></td>
+        <td port="HEALTH">Health</td>
+        <td port="HUNGER">Hunger</td>
+        <td port="STR">Str</td>
+        <td port="DEX">Dex</td>
+        <td port="CHA">Cha</td>
+        <td port="INT">Int</td>
+    </tr>
+</table>
+    >]
+
+    PET:OWNERID:s -> USER:ID:w
+    PETAPPEARANCE:PETID -> PET:ID:w
+    PETAPPEARANCE:SPECIESID -> SPECIES:ID
+    PETSTATS:PETID -> PET:ID:w
+}
