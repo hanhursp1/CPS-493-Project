@@ -9,17 +9,23 @@ The tabled that have been implemented are: `User`, `Pet`, `PetAppearance`, and `
 
 `User` contains users, `Pet` contains pets which are owned by users, `PetAppearance` contains the appearances of each pet, and `Species` contains all possible species that a pet can be.
 
-Creation of the database:
-![Database creation](/Assignment/Database Creation/DatabaseCreation.png)
+Creation of the database
+![Database creation](/Assignment/DatabaseCreation/DatabaseCreation.png)
+
 Creation of the `User` table
-![User creation](/Assignment/Database Creation/CreateUser.png)
+![User creation](/Assignment/DatabaseCreation/CreateUser.png)
+
 Creation of the `Pet` table
-![Pet creation](/Assignment/Database Creation/CreatePet.png)
+![Pet creation](/Assignment/DatabaseCreation/CreatePet.png)
+
 Failure to create the `PetAppearance` table, because it is dependent on the `Species` table. The `Species` table is then created first
-![PetAppearance creation failure and Species creation](/Assignment/Database Creation/CreateSpecies.png)
+![PetAppearance creation failure and Species creation](/Assignment/DatabaseCreation/CreateSpecies.png)
+
 Creation of `PetAppearance` after successfully creating `Species`
-![PetAppearance creation](/Assignment/Database Creation/CreatePetAppearance.png)
+![PetAppearance creation](/Assignment/DatabaseCreation/CreatePetAppearance.png)
+
 All created tables listed
-![Table list](/Assignment/Database Creation/ShowTables.png)
+![Table list](/Assignment/DatabaseCreation/ShowTables.png)
+
 Description of table `User`
-![User description](/Assignment/Database Creation/DescribeUser.png)
+![User description](/Assignment/DatabaseCreation/DescribeUser.png)
