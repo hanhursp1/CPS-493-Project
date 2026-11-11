@@ -17,6 +17,7 @@
 				<li><a href="./login.html">Log In</a></li>
 				<li><a href="./register.html">Register</a></li>
 				<li><a href="./pet.html">My Pets</a></li>
+				<li><a href="./adopt.html">Adopt a New Pet</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -25,7 +26,7 @@
 		<section class="section-bg" id="main-text">
 			<div class="section-fg login">
 				<h2><b>Log In</b> to your account</h2>
-				<form>
+				<form id="login-form">
 					<label for="uname">e-mail</label>
 					<input type="text" id="uname" name="uname">
 					<br>
@@ -39,4 +40,17 @@
 		<div class="sidebar"></div>
 	</main>
 </body>
+<script>
+	document.getElementById("login-form").addEventListener('submit', (e) => {
+		e.preventDefault()
+
+		const values = e.target
+		const login = {
+			email: values.uname.value,
+			password: values.passwd.value
+		}
+		console.log(login);
+		
+	})
+</script>
 </html>

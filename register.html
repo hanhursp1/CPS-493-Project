@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script src="user.js"></script>
 	<title>Register</title>
 </head>
 <body>
@@ -16,6 +17,7 @@
 				<li><a href="./login.html">Log In</a></li>
 				<li><a href="./register.html">Register</a></li>
 				<li><a href="./pet.html">My Pets</a></li>
+				<li><a href="./adopt.html">Adopt a New Pet</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,7 +31,7 @@
 		<section class="section-bg" id="main-text">
 			<div class="section-fg registration">
 				<h2 id="Registration"><b>Register</b> an account</h2>
-				<form>
+				<form id="registration-form">
 					<label for="namefirst">First Name</label>
 					<input type="text" id="namefirst" name="namefirst">
 					<label for="namelast">Last Name</label>
@@ -81,4 +83,20 @@
 		</div>
 	</main>
 </body>
+<script>
+	document.getElementById("registration-form").addEventListener('submit', (e) => {
+		e.preventDefault()
+
+		const values = e.target
+		const user = new User(0, values.namefirst.value, values.namelast.value, values.email.value, values.uname.value, values.passwd.value)
+		
+		const confirm = user.confirmPass(values.passwd_conf.value)
+		console.log(user)
+		console.log(confirm)
+
+		if (confirm) {
+			// Register our user!
+		}
+	})
+</script>
 </html>

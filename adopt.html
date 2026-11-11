@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="pet.js"></script>
+	<title>Log In</title>
+</head>
+<body>
+
+	<header id="top-header">
+		<div class="section-bg section-logo">
+			<h3>Logo Goes Here</h3>
+		</div>
+		<nav class="section-bg">
+			<ul>
+				<li><a href="./login.html">Log In</a></li>
+				<li><a href="./register.html">Register</a></li>
+				<li><a href="./pet.html">My Pets</a></li>
+				<li><a href="./adopt.html">Adopt a New Pet</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<nav class="sidebar"></nav>
+		<section class="section-bg" id="main-text">
+			<div class="section-fg login">
+				<h2><b>Enter some info</b> about your pet</h2>
+				<form id="adoption-form">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name">
+					<br>
+					<label for="species">Species</label>
+					<input type="text" id="species" name="species">
+					<br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<div class="sidebar"></div>
+	</main>
+</body>
+<script>
+	document.getElementById("adoption-form").addEventListener('submit', (e) => {
+		e.preventDefault()
+
+		const values = e.target
+		const pet = new Pet(0, values.name.value, values.species.value)
+		console.log(pet)
+	})
+</script>
+</html>
