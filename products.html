@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="products.js"></script>
+	<title>Merch!</title>
+</head>
+<body>
+
+	<header id="top-header">
+		<div class="section-bg section-logo">
+			<h3>Logo Goes Here</h3>
+		</div>
+		<nav class="section-bg">
+			<ul>
+				<li><a href="./login.html">Log In</a></li>
+				<li><a href="./register.html">Register</a></li>
+				<li><a href="./pet.html">My Pets</a></li>
+				<li><a href="./adopt.html">Adopt a New Pet</a></li>
+				<li><a href="./products.html">Merch</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<nav class="sidebar"></nav>
+		<section class="section-bg" id="main-text">
+			<div class="section-fg login">
+				<h2>Support our site, buy some merch!</h2>
+				<ul id="productlist"></ul>
+			</div>
+		</section>
+		<div class="sidebar"></div>
+	</main>
+</body>
+<script>
+	get_products()
+	.then(products => {
+		console.log(products)
+		
+		console.log(`${products[0].name}, cost: ${products[0].price}`)
+		console.log(products.map(product => product.name))
+
+		const productlist = document.getElementById("productlist")
+		products.forEach(product => {
+			const node = document.createElement("li")
+			node.innerText = product.name
+			productlist.append(node)
+		});
+	})
+	.catch(err => {
+		console.log(`Error Occurred: ${err}`)
+	})
+
+	get_products()
+</script>
+</html>
